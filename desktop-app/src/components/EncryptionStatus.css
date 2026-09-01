@@ -1,0 +1,84 @@
+.encryption-status {
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.status-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.status-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.step-icon {
+  font-size: 2em;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.step-icon.active {
+  color: #667eea;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.progress-container {
+  margin: 20px 0;
+  position: relative;
+}
+
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-container p {
+  text-align: center;
+  margin-top: 10px;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.result-container {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.result-container.success {
+  background: #e8f5e9;
+  border: 2px solid #4caf50;
+  color: #2e7d32;
+}
+
+.result-container.error {
+  background: #ffebee;
+  border: 2px solid #f44336;
+  color: #c62828;
+}
+
+.result-container h4 {
+  margin-bottom: 15px;
+}
+
+.result-container p {
+  word-break: break-all;
+  margin: 8px 0;
+}
